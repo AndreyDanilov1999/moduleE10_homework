@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Резюме</h1>
+        <h2>Веб-разработчик на Python</h2>
+        <div class="container">
+            <div class="photo">
+                <img src="photo.jpg" alt="photo" width="150px">
+            </div>
+            
+            <div class="name_contacts">
+                <p><b>ФИО:</b> Данилов Андрей Юрьевич</p>
+                <p><b>Родился:</b> 24 августа 1999 года</p>
+                <p><b>Контакты</b> +79990001234</p>
+                <p><b>Почта:</b> andrey.danilov@mail.ru</p>
+            </div>
+        </div>
+
+<button type="button" class="btn-education">Образование</button>
+<div class="description">
+    <p>Образование</p>
+</div>
+
+<button type="button" class="btn-education">Портфолио</button>
+<div class="description">
+    <p>Проекты</p>
+</div>
+
+<button type="button" class="btn-education">Навыки</button>
+<div class="description">
+    <p>Примерный уровень знаний</p>
+    <div align="left">
+        <p>HTML</p>
+        <div class="skill-container">
+        <div class="skills html">85%</div>
+        </div>
+
+        <p>Python</p>
+        <div class="skill-container">
+        <div class="skills python">75%</div>
+        </div>
+        
+        <p>CSS</p>
+        <div class="skill-container">
+        <div class="skills css">60%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="skill-container">
+        <div class="skills js">30%</div>
+        </div>
+    </div>
+</div>
+<br>
+<script>
+    var coll = document.getElementsByClassName("btn-education");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    console.log(content)
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+    </body>
+</html>

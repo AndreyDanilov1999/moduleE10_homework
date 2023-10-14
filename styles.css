@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Garamond;
+    src: url(Fonts/EBGaramond08-Regular.otf);
+}
+@media (min-width:720px) and (max-width: 1920px) {
+    .container {
+        font-style: normal;
+        font-size: 0.9em;
+    }
+}
+
+body {
+    font-family: Garamond, serif;
+    text-align: center;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+}
+
+
+.photo {
+    flex-direction: row;
+}
+
+.name_contacts {
+    text-align: left;
+    margin-left: 20px;
+}
+
+img {
+    width:170px;
+    height:200px;
+    padding:5px;
+    border:2px solid black;
+    border-radius: 20px;
+}
+
+.btn-education {
+    margin-bottom: 2px;
+    min-width: 100px;
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(157, 209, 252);
+    border: 2px solid rgb(157, 209, 252);
+    cursor: pointer;
+    outline: none;
+    font-size: 24px;
+}
+
+.active, .btn-education:hover {
+    background-color: rgb(62, 188, 247);
+    border: 2px solid rgb(0, 4, 250);
+}
+
+.description {
+    display:none;
+    overflow: hidden;
+    padding: 0 18px;
+}
+
+.skill-container {
+    width: 50%;
+    background-color: #ddd;
+
+}
+
+.skills {
+text-align: right;
+padding-top: 10px;
+padding-bottom: 10px;
+color: white;
+}
+
+.python {width: 75%; background-color: #d1c40e;}
+.js {width: 30%; background-color: #0f75c9;}
+.html {width: 85%; background-color: #49ac07;}
+.css {width: 60%; background-color: #dd1a1a;}
+
+p {
+    font-size: 1.5em;
+}
+
+h1, h2 {
+    font-size: 1.7em;
+}
